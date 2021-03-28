@@ -190,37 +190,48 @@ class _AddPasswordState extends State<AddPassword> {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 6.0),
-                  child: TextFormField(
-                    initialValue: _initValue['password'],
-                    decoration: kTextFormFieldInputDecoration.copyWith(
-                        labelText: 'password',
-                    ),
-                    obscureText: _isShown == true ? false: true,
-                    textInputAction: TextInputAction.next,
-                    focusNode: _passwordNode,
-                    onFieldSubmitted: (_) {
-                      FocusScope.of(context).requestFocus(_websiteNode);
-                    },
-                    onSaved: (value) {
-                      _editedCard = PassCard(
-                        id: _editedCard.id,
-                        title: _editedCard.title,
-                        accountID: _editedCard.accountID,
-                        username: _editedCard.username,
-                        password: value,
-                        website: _editedCard.website,
-                        notes: _editedCard.notes,
-                        other: _editedCard.other,
-                      );
-                    },
-                    validator: (value) {
-                      if(value.isEmpty || value.length < 1) {
-                        return 'Required Field';
-                      }
-                      if(value.contains(' '))
-                        return 'Can\'t use "space"';
-                      return null;
-                    },
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: TextFormField(
+                          initialValue: _initValue['password'],
+                          decoration: kTextFormFieldInputDecoration.copyWith(
+                              labelText: 'password',
+                          ),
+                          obscureText: _isShown == true ? false: true,
+                          textInputAction: TextInputAction.next,
+                          focusNode: _passwordNode,
+                          onFieldSubmitted: (_) {
+                            FocusScope.of(context).requestFocus(_websiteNode);
+                          },
+                          onSaved: (value) {
+                            _editedCard = PassCard(
+                              id: _editedCard.id,
+                              title: _editedCard.title,
+                              accountID: _editedCard.accountID,
+                              username: _editedCard.username,
+                              password: value,
+                              website: _editedCard.website,
+                              notes: _editedCard.notes,
+                              other: _editedCard.other,
+                            );
+                          },
+                          validator: (value) {
+                            if(value.isEmpty || value.length < 1) {
+                              return 'Required Field';
+                            }
+                            if(value.contains(' '))
+                              return 'Can\'t use "space"';
+                            return null;
+                          },
+                        ),
+                      ),
+                      IconButton(icon: Icon(Icons.remove_red_eye), onPressed: () {
+                        setState(() {
+                          _isShown = !_isShown;
+                        });
+                      }),
+                    ],
                   ),
                 ),
                 Padding(

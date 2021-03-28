@@ -48,49 +48,44 @@ class _AppDrawerState extends State<AppDrawer> {
             child: Column(
               children: <ListTile>[
                 ListTile(
-              leading: Icon(Icons.star_rate_outlined),
-              title: Text('Theme Switch'),
-              trailing: Switch(
-                value: themeChange.darkTheme,
-                onChanged: (bool value) {
-                  setState(() {
-                    themeChange.darkTheme = value;
-                  });
-                },
-              )
-          ),
-          ListTile(
-            onTap: () {
-              Scaffold.of(context).openEndDrawer();
-              Navigator.pushNamed(context, AboutScreen.id);
-            },
-            leading: Icon(Icons.account_box_outlined),
-            title: Text('About'),
-          ),
-          ListTile(
-            onTap: () {
-              cons.launchURL('https://github.com/aashu-jha', context);
-            },
-            leading: Icon(Icons.star_rate_outlined),
-            title: Text('Rate App'),
-          ),
-          ListTile(
-            onTap: () {
-              cons.launchURL('https://github.com/aashu-jha/secure_af', context);
-            },
-            leading: Icon(FontAwesomeIcons.github),
-            title: Text('Contribute'),
-          ),
+                    leading: Icon(FontAwesomeIcons.themeco),
+                    title: Text('Theme Switch'),
+                    trailing: Switch(
+                      value: themeChange.darkTheme,
+                      onChanged: (bool value) {
+                        setState(() {
+                          themeChange.darkTheme = value;
+                        });
+                      },
+                    )),
+                ListTile(
+                  onTap: () {
+                    Scaffold.of(context).openEndDrawer();
+                    Navigator.pushNamed(context, AboutScreen.id);
+                  },
+                  leading: Icon(Icons.account_box_outlined),
+                  title: Text('About'),
+                ),
+                ListTile(
+                  onTap: () {
+                    cons.launchURL('https://github.com/aashu-jha', context);
+                  },
+                  leading: Icon(Icons.star_rate_outlined),
+                  title: Text('Rate App'),
+                ),
+                ListTile(
+                  onTap: () {
+                    cons.launchURL(
+                        'https://github.com/aashu-jha/secure_af', context);
+                  },
+                  leading: Icon(FontAwesomeIcons.github),
+                  title: Text('Contribute'),
+                ),
               ],
             ),
           ),
         ],
       ),
     );
-
-
-
   }
 }
-
-
