@@ -15,7 +15,7 @@ dependencies:
   url_launcher: ^6.0.2
   shared_preferences: ^0.5.12+4
   font_awesome_flutter: ^8.12.0
-#  flutter_app_lock: ^1.4.0+1
+  flutter_launcher_icons: "^0.7.0"
 dependency_overrides:
   shared_preferences:
     git:
@@ -38,3 +38,11 @@ flutter:
   - family: Source Sans Pro
     fonts:
     - asset: assets/fonts/SourceSansPro-Regular.ttf
+flutter_icons:
+  ios: true
+  android: true
+  image_path_ios: "assets/launcher/icon_bg.png"
+  image_path_android: "assets/launcher/icon_bg.png"
+  adaptive_icon_background: "assets/launcher/icon_bg.png"
+  adaptive_icon_foreground: "assets/launcher/icon1.png"
+
