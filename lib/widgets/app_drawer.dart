@@ -48,7 +48,7 @@ class _AppDrawerState extends State<AppDrawer> {
             child: Column(
               children: <ListTile>[
                 ListTile(
-                    leading: Icon(FontAwesomeIcons.themeco),
+                    leading: Icon(FontAwesomeIcons.lowVision),
                     title: Text('Theme Switch'),
                     trailing: Switch(
                       value: themeChange.darkTheme,
