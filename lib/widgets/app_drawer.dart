@@ -76,8 +76,7 @@ class _AppDrawerState extends State<AppDrawer> {
           ),
           ListTile(
             onTap: () {
-              //TODO: add repository title in url
-              cons.launchURL('https://github.com/aashu-jha', context);
+              cons.launchURL('https://github.com/aashu-jha/secure_af', context);
             },
             leading: Icon(FontAwesomeIcons.github),
             title: Text('Contribute'),
