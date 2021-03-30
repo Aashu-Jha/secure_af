@@ -1,7 +1,15 @@
-# secure_af
+# Secure_af
 
-A new Flutter application.
+A new offline password manager built with flutter which stores user credentials in offline database with help of sqflite. 
 
+# Functionalities
+  - Add credentials.
+  - Delete credentials with right swipe.
+  - Copy password from outside the tile.
+  - View the whole credentials in detail_screen.
+  - Day/light theme.
+  - Copy accountId/ username, password.
+  
 ## Packages Used-
  - Provider
  - Url-Launcher
