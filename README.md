@@ -10,7 +10,6 @@ A new offline password manager built with flutter which stores user credentials 
 
 |                      Light Theme                             |                         Dark Theme                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------:  |
-| ![](https://github.com/Aashu-Jha/Images/blob/main/sec9.jpg)  | ![](https://github.com/Aashu-Jha/Images/blob/main/sec11.jpg)  | 
 | ![](https://github.com/Aashu-Jha/Images/blob/main/sec8.jpg)  | ![](https://github.com/Aashu-Jha/Images/blob/main/sec10.jpg)  |
 | ![](https://github.com/Aashu-Jha/Images/blob/main/sec6.jpg)  | ![](https://github.com/Aashu-Jha/Images/blob/main/sec2.jpg)   |
 | ![](https://github.com/Aashu-Jha/Images/blob/main/sec12.jpg) | ![](https://github.com/Aashu-Jha/Images/blob/main/sec1.jpg)   |
