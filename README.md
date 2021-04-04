@@ -37,3 +37,9 @@ A new offline password manager built with flutter which stores user credentials 
 ## Contributors
 
 **Maintainer:** [Aashish Jha](https://github.com/aashu-jha)
+
+### License
+
+This application is released under the [MIT license](license.md). You can use the code for any purpose, including commercial projects.
+
+[![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
