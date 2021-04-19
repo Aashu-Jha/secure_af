@@ -1,4 +1,4 @@
-# Secure_af
+# Securely
 
 A new offline password manager built with flutter which stores user credentials in offline database with help of sqflite. 
 
